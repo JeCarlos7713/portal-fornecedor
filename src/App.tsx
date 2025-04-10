@@ -1,11 +1,10 @@
 import './App.css'
+import Login from './pages/login/Login'
 
 function App() {
   
   return (
-    <>
-      <h1>Testando</h1>  
-    </>
+    <Login />
   )
 }
 
