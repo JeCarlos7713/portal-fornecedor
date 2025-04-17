@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import logo from './../../assets/Supplier+.svg'
+import logo from './../../assets/logo.svg'
 
 type LogoProps = {
     width: string
