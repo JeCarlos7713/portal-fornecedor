@@ -1,17 +1,9 @@
-import { useEffect, useState } from 'react'
+
 import logo from './../../assets/logo.svg'
 
-type LogoProps = {
-    width: string
-}
-const Logo = ({ width }: LogoProps) => {
-    const [wLogo, setWLogo] = useState<string>("w-10")
+const Logo = () => {
 
-    useEffect(() => {
-        setWLogo(`w-${width}`)
-    }, [width])
-
-    return <img src={logo} alt='Logo Supplier+' className={wLogo} />
+    return <img src={logo} alt='Logo Supplier+' width={150} />
 }
 
 export default Logo
