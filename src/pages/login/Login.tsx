@@ -1,18 +1,19 @@
+import { Flex } from '@chakra-ui/react'
 import Logo from '../../components/Logo/Logo'
 
 const Login = () => {
   return (
     <>
-
-      <div className="flex min-h-full flex-1 flex-col justify-center items-center px-6 py-12 lg:px-8">
-        <div className="flex flex-col justify-center items-center sm:w-full sm:max-w-sm">
+      <Flex justify='center' direction='column' align='center'
+        paddingX='6' paddingY='12' >
+        <Flex direction='column' align='center' justify='center' gap='2' marginBottom='5'>
           <Logo />
           <p className="mt-3 text-center tracking-tight">
             Conectando fornecedores e processos
           </p>
-        </div>
+        </Flex>
 
-        <div className="mt-7 shadow-xl w-110 p-10 h-100 rounded-xl">
+        <Flex marginTop='7' shadow='xl' width='450px' height='350px' rounded='xl' direction='column' padding='5'>
           <div className='mb-[15px]'>
             <h5 className='text-xl font-semibold'>Entrar</h5>
             <p className='text-sm'>Seja muito bem-vindo ao Supplier+</p>
@@ -61,8 +62,8 @@ const Login = () => {
               </button>
             </div>
           </form>
-        </div>
-      </div>
+        </Flex>
+      </Flex>
     </>
 
   )
